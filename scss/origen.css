@@ -4,6 +4,7 @@
   font-family: Roboto;
 }
 
+/****hola mundo****/
 section {
   width: 100%;
   display: inline-block;
@@ -156,21 +157,81 @@ section {
   padding-bottom: 50px;
 }
 
-.cajaUno .borde-bordo {
+.cajaUno .borde-bordo, .cajaUno .borde-nuevo {
   border: solid #640a0a;
   padding-left: 1px;
 }
 
-.cajaUno .borde-bordo .white {
+.cajaUno .borde-bordo .white, .cajaUno .borde-nuevo .white {
   color: white;
 }
 
-.cajaUno .borde-bordo .white:hover {
+.cajaUno .borde-bordo .white:hover, .cajaUno .borde-nuevo .white:hover {
   color: crimson;
   text-decoration: underline;
 }
 
 .subtitulo {
   color: blue;
+  text-align: center;
+}
+
+.color-parrafo {
+  color: red;
+  text-align: center;
+}
+
+/*****Extend*****/
+.borde-nuevo {
+  color: red;
+  background-color: #ffffff;
+  padding-right: 1px;
+  padding-top: 2px;
+}
+
+/*****Mixin*****/
+.cajaDos {
+  width: 100%;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center center;
+      -ms-flex-pack: center center;
+          justify-content: center center;
+  padding-bottom: 10px;
+}
+
+.cajaTres {
+  width: 100%;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center center;
+      -ms-flex-pack: center center;
+          justify-content: center center;
+  padding-bottom: 10px;
+}
+
+/* MAPS */
+.div-color1 {
+  background-color: skyblue;
+}
+
+.div-color2 {
+  background-color: yellow;
+}
+
+.div-color3 {
+  background-color: green;
 }
 /*# sourceMappingURL=origen.css.map */

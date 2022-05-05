@@ -4,6 +4,10 @@
   font-family: Roboto;
 }
 
+//Import
+@import"variables";
+
+
 section {
   width: 100%;
   display: inline-block;
@@ -124,19 +128,19 @@ section {
     position: center ;
     justify-content: center;
     margin: 0;
-}
-
-.margen{
-margin-bottom: 50px skyblue;
-}
-
-/**********Historia**********/
-//anidamiento//
-
-.cajaUno {
-  display: flex;
-  flex-flow: row wrap;
-  width: 100%;
+  }
+  
+  .margen{
+    margin-bottom: 50px skyblue;
+  }
+  
+  /**********Historia**********/
+  //anidamiento//
+  
+  .cajaUno {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
   /* height: 50vh; */
   text-align: center;
   padding-bottom: 50px;
@@ -148,23 +152,80 @@ margin-bottom: 50px skyblue;
     
     .white {
       color: white;
-
       
-
-        &:hover{
-          color: crimson;
-          text-decoration: underline;
-        }
       
-
-      
+      &:hover{
+        color: crimson;
+        text-decoration: underline;
       }
       
+      
+      
+    }
+    
     
   }
 }
 
-$azul:blue;
+
 .subtitulo{
   color: $azul;
+  text-align: center;
+  
+  
+}
+
+.color-parrafo{
+  color: $rojo;
+  text-align: center;
+  
+}
+
+//extend
+/*****Extend*****/
+.borde-nuevo{
+
+  @extend .borde-bordo;
+  color: red;
+  background-color: #ffffff;
+  padding-right: 1px;
+  padding-top: 2px;
+}
+
+//Mixin
+/*****Mixin*****/
+@mixin tamaño($ancho,$altura) {
+  //fragmento que se imprime
+  width: $ancho;
+  height: $altura;
+}
+
+.cajaDos{
+@include tamaño(100%,50vh);
+display: flex;
+flex-flow: row wrap;
+justify-content: center center;
+padding-bottom: 10px
+}
+.cajaTres{
+@include tamaño(100%,50vh);
+display: flex;
+flex-flow: row wrap;
+justify-content: center center;
+padding-bottom: 10px
+}
+
+/* MAPS */
+$mapa:(
+  color1: skyblue,
+  color2: yellow,
+  color3: green,
+);
+
+//Maps cpn each
+
+@each $nombre,$color in $mapa {
+  .div-#{$nombre}{
+    background-color: $color;
+  }
 }
