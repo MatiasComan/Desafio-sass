@@ -200,26 +200,13 @@ section {
   height: $altura;
 }
 
-.cajaDos{
-@include tamaño(100%,50vh);
-display: flex;
-flex-flow: row wrap;
-justify-content: center center;
-padding-bottom: 10px
-}
-.cajaTres{
-@include tamaño(100%,50vh);
-display: flex;
-flex-flow: row wrap;
-justify-content: center center;
-padding-bottom: 10px
-}
+
 
 /* MAPS */
 $mapa:(
   color1: skyblue,
-  color2: yellow,
-  color3: green,
+  color2: rgb(0, 110, 255),
+  color3: rgb(0, 45, 128),
 );
 
 //Maps cpn each
