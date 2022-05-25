@@ -166,7 +166,7 @@ section {
 }
 
 .cajaUno .borde-bordo .white:hover {
-  color: crimson;
+  color: rgb(12, 7, 7);
   text-decoration: underline;
 }
 /*# sourceMappingURL=origen.css.map */

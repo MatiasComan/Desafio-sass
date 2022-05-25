@@ -167,7 +167,7 @@ section {
 }
 
 .cajaUno .borde-bordo .white:hover, .cajaUno .borde-nuevo .white:hover {
-  color: crimson;
+  color: rgb(12, 11, 11);
   text-decoration: underline;
 }
 
@@ -228,10 +228,10 @@ section {
 }
 
 .div-color2 {
-  background-color: yellow;
+  background-color: rgb(14, 124, 249);
 }
 
 .div-color3 {
-  background-color: green;
+  background-color: rgb(12, 85, 194);
 }
 /*# sourceMappingURL=origen.css.map */
